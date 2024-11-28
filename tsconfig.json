@@ -1,0 +1,23 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json"
+  {
+    "compilerOptions": {
+      "target": "es6",                          // Transpile to ECMAScript 6
+      "module": "commonjs",                      // Use CommonJS modules
+      "jsx": "react",                            // JSX is treated like React
+      "allowJs": true,                           // Allow JavaScript files
+      "esModuleInterop": true,                   // Ensure compatibility with ES modules
+      "skipLibCheck": true,                      // Skip checking types of library dependencies
+      "forceConsistentCasingInFileNames": true,  // Enforce consistent case
+      "noImplicitAny": true,                     // Disallow implicit 'any' types
+      "strict": true,                            // Enable strict type checking
+      "moduleResolution": "node",                // Use Node's module resolution algorithm
+      "resolveJsonModule": true                  // Allow importing .json files
+    },
+    "exclude": [
+      "node_modules",                            // Exclude node_modules from compilation
+      "babel.config.js",                         // Exclude Babel config files
+      "metro.config.js"                          // Exclude Metro config files
+    ]
+  }
+}
